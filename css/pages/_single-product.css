@@ -1,0 +1,88 @@
+.important-deatils {}
+
+.important-deatils .product-name {
+    font-size: 1.8rem;
+    color: var(--bs-gray-2);
+    font-weight: bold;
+    padding-right: 2rem;
+    position: relative;
+}
+
+.important-deatils .product-name::before {
+    content: '';
+    width: 0.5rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--bs-gray-1);
+}
+
+.important-deatils > div {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    gap: 1.5rem;
+    color: var(--bs-gray-2);
+}
+
+.important-deatils .product-img-box{
+    display: grid;
+    gap: 2rem;
+}
+
+.important-deatils .prodcut-main-img{
+    width: 26rem;
+    height: 22rem;
+    border: 1px solid var(--bs-gray-1);
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+.important-deatils .prodcut-main-img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.important-deatils .product-colors{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.product-colors > div{
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid var(--bs-gray-1);
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+
+
+}
+
+.product-colors img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.important-deatils .details {
+    display: grid;
+    gap: 2rem;
+}
+
+.important-deatils .details > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details .price-box{
+    color: var(--bs-green);
+    font-weight: bold;
+    font-size: 1.7rem;
+}
