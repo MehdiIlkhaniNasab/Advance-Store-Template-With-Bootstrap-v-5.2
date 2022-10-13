@@ -1,0 +1,144 @@
+/* Aside  */
+.aside .category,
+.aside .user-baskit,
+.aside .compare-list {
+    border: 2px solid var(--bs-gray-1);
+    border-radius: 5px;
+}
+
+.aside-titel {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--bs-gray-1);
+}
+
+.aside-titel h3{
+    font-size: 1.7rem;
+    color: var(--bs-gray-3);
+}
+
+.aside-list {
+    padding: 2rem;
+    list-style-type: none;
+    color: var(--bs-black-0);
+    display: grid;
+    align-items: center;
+    gap: 1rem;
+}
+
+.aside-list-titel {
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* User Baskit */
+.user-baskit .aside-list,
+.compare-list .aside-list{
+    padding: 0;
+}
+
+.user-baskit .aside-list li,
+.compare-list .aside-list li{
+    border-bottom:  1px solid var(--bs-gray-1);
+    display: flex;
+    align-items: center;
+    gap:  1rem;
+    padding: 1rem;
+}
+
+.user-baskit li img{
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 5px;
+}
+
+.btn-user-baskit,
+.btn-compare{
+    margin: 1rem auto;
+    width: 95%;
+}
+
+
+.user-baskit li a{
+    text-decoration: none;
+    color: var(--bs-black-0);
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    font-size: 1.4rem;
+    transition: all 0.4s;
+}
+.user-baskit li a:hover{
+    color: var(--bs-blue);
+}
+
+
+
+.user-baskit li a span{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid var(--bs-gray-1);
+    color: var(--bs-blue);
+}
+/* End User Baskit */
+
+/* Compare list */
+
+.compare-list li {
+    font-size: 1.4rem;
+}
+.compare-list li i{
+    font-size: 1.2rem;
+    color: var(--bs-red);
+}
+/* End Compare list */
+
+/* Category */
+.category .aside-list li{
+    transition: all 0.4s;
+    position: relative;
+    padding-right: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.3rem;
+}
+
+
+
+.category .aside-list li::before {
+    position: absolute;
+    font-family: 'FontAwesome';
+    content: '\f0d9';
+    color: #69686D;
+    font-size: 15px;
+    right: 0;
+    top: 0;
+}
+
+
+
+.category .aside-list a {
+    text-decoration: none;
+    color: currentColor;
+    transition: all 0.4s;
+}
+
+.category .aside-list li span{
+    transition: all 0.4s;
+}
+
+.category .aside-list a:hover,
+.category .aside-list a:hover + span {
+    color: var(--bs-red);
+    background-color: transparent !important;
+    transform: translateX(-1rem);
+}
+
+/* End Category */
+
+
+/* End Aside  */

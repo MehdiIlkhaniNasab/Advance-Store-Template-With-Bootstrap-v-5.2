@@ -1,0 +1,87 @@
+.mega-menu{
+    border-bottom: 2px solid var(--bs-gray-1);
+
+}
+
+.mega-menu > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-list{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu-list .menu-item{
+    padding: 10px 0 10px 15px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--bs-gray-0);
+    transition: all 0.4s;
+
+}
+
+.menu-item:hover{
+    color: var(--bs-red);
+}
+
+.menu-list .menu-link{
+    text-decoration: none;
+    color: currentColor;
+}
+
+.search{
+    width: 4.5rem;
+    height: 4.1rem;
+    font-size: 2.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid var(--bs-gray-1);
+    border-left: 2px solid var(--bs-gray-1);
+    position: relative;
+}
+
+.search span{
+    color: var(--bs-gray-2);
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.search span:hover{
+    color: var(--bs-blue);
+}
+
+.form-search{
+    position: absolute;
+    width: 28.5rem;
+    height: 5rem;
+    padding: 0.6rem ;
+    top: 100%;
+    left: 0;
+    border: 2px solid var(--bs-gray-1);
+    transform: translateY(-10rem);
+    transition: all 0.4s;
+    z-index: -10;
+    background-color: var(--bs-white-0);
+}
+
+.active-search{
+    transform: translateY(0);
+    z-index: 10;
+}
+
+.responsive-menu{
+    font-size: 3rem;
+    color: var(--bs-gray-2);
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.responsive-menu:hover{
+    color: var(--bs-blue);
+}

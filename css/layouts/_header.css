@@ -1,0 +1,54 @@
+.header-site{
+    background-color: var(--bs-white-1);
+    border-bottom: 2px solid var(--bs-gray-1);
+
+}
+
+.header-site > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header-left svg{
+    width: 11rem;
+    height: 6.5rem;
+    fill: var(--bs-green);
+}
+
+.logo-desc h2{
+    font-size: 3rem;
+}
+
+.logo-desc h2,
+.header-right h2{
+    color: var(--bs-blue);
+}
+
+.logo-desc h2 span:last-child{
+    color: var(--bs-red);
+}
+
+.logo-desc p{
+    color: var(--bs-gray-0);
+    font-size: 2rem;
+}
+
+.header-right h2{
+    display: grid;
+    text-align:justify ;
+    font-size: 2.5rem;
+    gap: 0.5rem;
+}
+.header-right h2 span:last-child{
+    display: inline-block;
+    display: flex;
+    gap: 1rem;
+}

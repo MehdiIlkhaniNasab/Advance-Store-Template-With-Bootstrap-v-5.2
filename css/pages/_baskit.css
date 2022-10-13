@@ -1,0 +1,86 @@
+.tbl-baskit{
+    border: 1px solid var(--bs-gray-4);
+    border-radius: 5px;
+}
+
+.head-tbl{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: var(--bs-white-2);
+    border: 1px solid var(--bs-gray-4);
+    border-radius: 5px;
+}
+
+.head-tbl > div{
+    padding: 1rem;
+    border-left: 1px solid var(--bs-gray-4);
+    flex: 3;
+}
+
+.head-tbl > div:last-child{
+    flex: 1;
+}
+
+.body-tbl{
+    display: flex;
+    flex-direction: column;
+}
+
+.body-tbl .product-compare{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--bs-gray-4);
+    height: 100%;
+}
+
+.body-tbl .product-compare > div{
+    padding: 1rem ;
+    height: 100%;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    flex: 3;
+    border-left: 1px solid var(--bs-gray-4);
+}
+
+.body-tbl .product-compare > div:last-child{
+    flex: 1;
+}
+
+.body-tbl div img{
+    width: 7.5rem;
+    height: 7.5rem;
+}
+.body-tbl i{
+    font-size: 1.7rem;
+    cursor: pointer;
+    color: var(--bs-red);
+}
+
+.body-tbl .product-name{
+    font-size: 1.4rem;
+}
+
+.body-tbl .price-box{
+    color: var(--bs-green);
+    font-weight: bold;
+}
+
+.footer-tbl > div{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    border: 1px solid var(--bs-gray-4);
+    border-radius: 5px;
+    padding: 1rem;
+    color: var(--bs-gray-3);
+    font-weight: bold;
+}
+
+.footer-tbl .total-price {
+    color: var(--bs-green);
+}
